@@ -52,13 +52,15 @@ const eShop = {
 // changePhoneNumber();
 
 //4
-function listProductNames() {
-  shop.products.forEach(function (product) {
-    console.log(product.name);
-  });
-}
-
-listProductNames();
+let listProductNames = [
+  "1.Gabrini тональный крем",
+  "2.Dc Cercaule пенка для умывания ",
+  "3.Telescopic тушь для ресницы",
+  "4.Dr.Jart сыворатка",
+  "5.Syoss шампунь для волос",
+];
+listProductNames.forEach((num) => num.listProductNames);
+alert(listProductNames);
 
 //5
 function addProduct() {
@@ -67,7 +69,7 @@ function addProduct() {
   let category = prompt("Onim categoriasyn engiz");
   let stock = prompt("Onim sanyn engiz");
 
-  shop.products.push(name, price, category, stock);
+  eShop.products.push(name, price, category, stock);
 }
-
+console.log(eShop.products);
 addProduct();
